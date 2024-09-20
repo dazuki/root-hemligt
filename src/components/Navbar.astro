@@ -2,8 +2,8 @@
 import { Icon } from "astro-icon/components";
 ---
 
-<nav class="flex justify-center fixed navbar p-0">
-    <div class="navbar bg-base-300 max-w-5xl">
+<nav class="flex justify-center fixed navbar p-0 lg:p-4">
+    <div class="navbar bg-base-300 max-w-5xl lg:rounded-xl">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -22,11 +22,10 @@ import { Icon } from "astro-icon/components";
                     </svg>
                 </div>
                 <ul
-                    tabindex="0"
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
                 >
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
                     <!-- <li>
                         <a>Parent</a>
                         <ul class="p-2">
@@ -36,19 +35,17 @@ import { Icon } from "astro-icon/components";
                     </li> -->
                 </ul>
             </div>
-            <a class="btn btn-ghost text-xl">Hemligt</a>
+            <a class="btn btn-ghost text-xl"
+                ><Icon name="mdi:alpha-h-circle" size="48" /></a
+            >
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li>
-                    <a class="btn btn-sm btn-ghost"
-                        ><Icon name="mdi:home" size="24" />Home</a
-                    >
+                    <a class="btn btn-sm btn-ghost">hem</a>
                 </li>
                 <li>
-                    <a class="btn btn-sm btn-ghost"
-                        ><Icon name="mdi:console" size="24" />Stuff</a
-                    >
+                    <a class="btn btn-sm btn-ghost">filer</a>
                 </li>
                 <!-- <li>
                     <details>
@@ -62,9 +59,9 @@ import { Icon } from "astro-icon/components";
             </ul>
         </div>
         <div class="navbar-end">
-            <a class="btn btn-sm btn-ghost"
+            <!-- <a class="btn btn-sm btn-ghost"
                 ><Icon name="mdi:login" size="24" />Login</a
-            >
+            > -->
         </div>
     </div>
 </nav>
